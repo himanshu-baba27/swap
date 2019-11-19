@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- Switch images script -->
+<script type="text/javascript">
+    function swapImage(id,primary,secondary) {
+      src=document.getElementById(id).src;
+      if (src.match(primary)) {
+        document.getElementById(id).src=secondary;
+      } else {
+        document.getElementById(id).src=primary;
+      }
+    }
+  </script>
+  <img
+  id="desat"
+  onclick="swapImage(
+    'desat',
+    '1.jpg',
+    '2.webp'
+  )"
+  src="1.jpg"
+  title=""
+
+/>
+<span style="font-size:0.6em">
+  
+
+  <a href="2.webp"></a>
+</span>
+    
+</body>
+</html>
